@@ -18,17 +18,14 @@ function App() {
 
         <div className="p-3">
           <Switch>
-            <Route exact path="/">
-              <Home/>
-            </Route>
-            <Route path="/home">
-              <Home/>
-            </Route>
             <Route path="/about">
               <About/>
             </Route>
             <Route path="/products/:id">
               <Product/>
+            </Route>
+            <Route exact path={["/", "/home", "/*"]}>
+              <Home/>
             </Route>
           </Switch>
         </div>
