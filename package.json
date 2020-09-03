@@ -1,5 +1,5 @@
 {
-  "homepage": "",
+  "homepage": "https://distracted-almeida-2f6e4d.netlify.app/",
   "name": "learning-react",
   "version": "0.1.0",
   "private": true,
@@ -46,9 +46,4 @@
       "last 1 safari version"
     ]
   },
-  "devServer": {
-    "--historyApiFallback": true,
-    "contentBase": "./",
-    "hot": true
- }
 }
