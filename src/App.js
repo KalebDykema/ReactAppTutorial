@@ -10,6 +10,7 @@ import Footer from './Components/Footer';
 import Home from './Views/Home';
 import About from './Views/About';
 import Product from './Views/Product';
+import NotFound from './Views/NotFound';
 
 function App() {
   const address = window.location.href;
@@ -31,8 +32,11 @@ function App() {
             <Route path="/products/:id">
               <Product/>
             </Route>
-            <Route exact path={["/", "/home", "/*"]}>
+            <Route exact path={["/", "/home"]}>
               <Home/>
+            </Route>
+            <Route>
+              <NotFound/>
             </Route>
           </Switch>
         </div>
