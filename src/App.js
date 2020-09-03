@@ -31,7 +31,7 @@ function App() {
             <Route path="/products/:id">
               <Product/>
             </Route>
-            <Route exact path={["/", "/home", "/*"]}>
+            <Route exact path={["/", "/home"]}>
               <Home/>
               { window.history.pushState("home", "home", "/") }
             </Route>
